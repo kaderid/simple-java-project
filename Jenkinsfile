@@ -8,7 +8,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/<ton-utilisateur>/simple-java-project.git'
+                    url: 'https://github.com/kaderid/simple-java-project.git'
             }
         }
         stage('Build') {
