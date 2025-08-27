@@ -13,17 +13,17 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh 'mvn clean compile'
+                bat 'mvn clean compile'
             }
         }
         stage('Test') {
             steps {
-                sh 'mvn test'
+                bat 'mvn test'
             }
         }
         stage('Run') {
             steps {
-                sh 'java -cp target/classes HelloWorld'
+                bat 'java -cp target/classes HelloWorld'
             }
         }
     }
